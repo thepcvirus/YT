@@ -18,18 +18,34 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    background-color: gray;
-    height: 50px;
+    justify-items: center;
+    min-height: 50px;
+    padding: 10px;
 }
 
-aside{
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+header img{
+    height: 30px;
+}
+header button{
+    background: none;
+    border:none;
+}
+
+.side{
     overflow-y: scroll;
+    border-right: #3838388e 1px solid;
+    margin: 0px 20px;
 }
 
 main{
+    border-top: #3838388e 1px solid;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .VidSec{
@@ -38,7 +54,16 @@ main{
 }
 
 .Card{
-    margin: 20px;
+    margin: 5px;
+}
+
+.CardData{
+    display: grid;
+    grid-template-areas: 
+    "b"
+    "c"
+    "d"
+    ;
 }
 
 .Card .img{
@@ -47,6 +72,29 @@ main{
 
 .usrimg{
     border-radius: 50%;
-    height: 24px;
-    width: 24px;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+.btn{
+    display: flex; flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.btn button{
+    background: none;
+    border:none;
+}
+.btn label{
+    margin: 10px;
+    font-weight: bold;
+}
+
+hr{
+    border: none;
+    background-color: #6464648e;
+    height: 1px;
+    margin:10px 2px;
 }
